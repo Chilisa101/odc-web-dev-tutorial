@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+    <title>Top Menu</title>
+
+    <style>
+        /* CSS for the video container */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        
+        /* CSS for the video */
+        .video-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+        }
+        
+        /* Additional styles for the profile section */
+        .profile {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="odc web dev tutorial/style.css">
+
+</head>
+<body>
+    <div class="profile">
+        <img src="images/naruto.jpeg" alt="Profile Picture">
+        <h1>Git hUB</h1>
+        <p><strong>Email:</strong> github@example.com</p>
+        <p><strong>Location:</strong> Botswana, Gaborone</p>
+        <p><strong>About Me:</strong> first Github project, taught by Theo. jbdsjkbcjdcbksdjbckcb</p>
+        <button class="my-button">Click me</button>
+        <div class="popup" id="myPopup">
+            <h1>By: Karabo</h1>
+            <p>More to come</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+        <button class="my-button story-line-button" onclick="navigateToSignUp()">Sign Up</button>
+
+<script>
+    function navigateToSignUp() {
+        window.location.href = "registration.html"; // Replace "signup.html" with the URL of the desired page
+    }
+</script>
+
+        <div id="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+    </div>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="videos/vids.mp4" type="video/mp4">
+            <source src="path/to/video.webm" type="video/webm">
+            <!-- Add more <source> tags for different video formats -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="top-menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <script>
+                function goToAppPage() {
+                    window.location.href = "home.html";
+                }
+            </script>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
